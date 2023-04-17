@@ -5695,7 +5695,32 @@
             if (window.matchMedia("(max-width: 480px)").matches) {
                 //alert("I am a phone layout!");
                 devType = 'phone';
-                vWidth = 450;
+                vWidth = 420;
+                vHeight = 2930;
+                //options.device = 'phone';
+            } else if (window.matchMedia("(max-width: 980px)").matches) {
+                //alert("I am a tablet layout!");
+                devType = 'tablet';
+                vWidth = 980;
+                //options.device = 'tablet';
+            } else {
+                //alert("I am a desktop layout!");
+                devType = 'desktop';
+                vWidth = 1666;
+                vHeight = 900;
+                //options.device = 'desktop';
+            }
+            console.log("devtype: " + devType)
+            console.log("launch0")
+           
+            launchViz(0);
+            console.log("launch1")
+           
+                  // Determines the correct viz layout according to screen sizes.
+                  if (window.matchMedia("(max-width: 480px)").matches) {
+                //alert("I am a phone layout!");
+                devType = 'phone';
+                vWidth = 420;
                 vHeight = 2000;
                 //options.device = 'phone';
             } else if (window.matchMedia("(max-width: 980px)").matches) {
@@ -5707,20 +5732,55 @@
                 //alert("I am a desktop layout!");
                 devType = 'desktop';
                 vWidth = 1666;
-                vHeight = 1000;
+                vHeight = 900;
                 //options.device = 'desktop';
             }
-            console.log("devtype: " + devType)
-            console.log("launch0")
-            vHeight = 900;
-            launchViz(0);
-            console.log("launch1")
+           
+           
             launchViz(1);
           
             console.log("launch2")
-            vHeight = 1100;
+                     // Determines the correct viz layout according to screen sizes.
+                     if (window.matchMedia("(max-width: 480px)").matches) {
+                //alert("I am a phone layout!");
+                devType = 'phone';
+                vWidth = 420;
+                vHeight = 1700;
+                //options.device = 'phone';
+            } else if (window.matchMedia("(max-width: 980px)").matches) {
+                //alert("I am a tablet layout!");
+                devType = 'tablet';
+                vWidth = 980;
+                //options.device = 'tablet';
+            } else {
+                //alert("I am a desktop layout!");
+                devType = 'desktop';
+                vWidth = 1666;
+                vHeight = 1100;
+                //options.device = 'desktop';
+            }
             launchViz(2);
             console.log("launch3")
+
+                        // Determines the correct viz layout according to screen sizes.
+                        if (window.matchMedia("(max-width: 480px)").matches) {
+                //alert("I am a phone layout!");
+                devType = 'phone';
+                vWidth = 420;
+                vHeight = 1700;
+                //options.device = 'phone';
+            } else if (window.matchMedia("(max-width: 980px)").matches) {
+                //alert("I am a tablet layout!");
+                devType = 'tablet';
+                vWidth = 980;
+                //options.device = 'tablet';
+            } else {
+                //alert("I am a desktop layout!");
+                devType = 'desktop';
+                vWidth = 1666;
+                vHeight = 1100;
+                //options.device = 'desktop';
+            }
             launchViz(3);
             vHeight = 900;
             // launchViz(4);
